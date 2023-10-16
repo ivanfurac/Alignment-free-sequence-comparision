@@ -13,10 +13,10 @@ Four different alignment-free methods were implemented and compared for the purp
 * **compression distance**: Lempel-Ziv complexities of both sequences are determined, as well as the complexity of a new sequence created by concatenating the two sequences. Normalized compression distance is then calculated using the following formula:
   ![image](https://github.com/ivanfurac/Alignment-free-sequence-comparision/assets/73389887/9c28baf1-6934-4f85-8be6-3bfaeba7206c)
 
-* **relative entropy**: For each symbol *i*, the frequencies of that symbol (nucleotide) appearing in both sequences are calculated (*p* and *q*). A measure called Kullback-Leibler divergence is then calculated, which basically represents the disimilarity between two probability distributions, using the formula below:
+* **relative entropy**: For each symbol *i*, the frequencies of that symbol (nucleotide) appearing in both sequences are calculated (*p* and *q*). A measure called Kullback-Leibler divergence is then calculated, which basically represents the dissimilarity between two probability distributions, using the formula below:
   
   ![image](https://github.com/ivanfurac/Alignment-free-sequence-comparision/assets/73389887/80017da4-51de-4b9f-9570-492487908f37)
 
-* **fuzzy integral similarity**: The sequences are viewed as Markov chains where nucleotides are states, and transition probabilities are calculated. The Sugeno fuzzy integral is then used to calculate the similarity between two sequences.
+* **fuzzy integral similarity**: The sequences are viewed as Markov chains where nucleotides represent states. Transition probabilities are calculated, and then the Sugeno fuzzy integral is used to calculate the dissimilarity between two sequences.
 
 ## Repository and Usage
