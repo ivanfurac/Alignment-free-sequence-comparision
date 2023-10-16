@@ -45,8 +45,17 @@ To use the alignment-free methods and calculate distances between sequences, run
   * relativeentropy (relative entropy)
   * fuzzymarkov (fuzzy integral similarity).
  
-You can add your own methods, simply write a class that represents your alignment-free method and put it into `/methods` directory. The class needs to have a _ _call_ _ method that receives three arguments:
+You can add your own methods, simply write a class that represents your alignment-free method and put it into `/methods` directory. The class needs to have a __ call __ method that receives three arguments:
 * a list of sequences
 * a list of sequence names, for identifying sequences
 * csv.writer object, which writes calculated distances to a file
+
+Required Python libraries are listed in the `requirements.txt` file. You can install them using the following command:
+
+```
+pip install -r requirements.txt
+```
+
+If you're interested in more details, in the directory `/paper` you can find two text files where previously mentioned alignment-free methods are explained and compared based on their performance.
+
   
