@@ -11,6 +11,7 @@ The goal of this project was to implement several alignment-free methods and use
 Four different alignment-free methods were implemented and compared for the purpose of this project (the code for those methods can be found in the repository):
 * **k-mer count**: First, two vectors are created that represent the number of different k-mers that can be found in each sequence. Then the distance (e.g., euclidean) is calculated between two vectors.
 * **compression distance**: Lempel-Ziv complexities of both sequences are determined, as well as the complexity of a new sequence created by concatenating the two sequences. Normalized compression distance is then calculated using the following formula:
+  
   ![image](https://github.com/ivanfurac/Alignment-free-sequence-comparison/assets/73389887/55ef4178-681b-4d46-90f5-989d8d573eca)
 
 * **relative entropy**: For each symbol *i*, the frequencies of that symbol (nucleotide) appearing in both sequences are calculated (*p* and *q*). A measure called Kullback-Leibler divergence is then calculated, which basically represents the dissimilarity between two probability distributions, using the formula below:
