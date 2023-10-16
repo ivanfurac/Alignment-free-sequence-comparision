@@ -6,6 +6,8 @@ This project was one of my bioinformatics projects I did as a student at the Fac
 ## Project Overview
 The goal of biological sequence analysis (protein sequences or nucleotide sequences) is to determine the similarity of two sequences, which is then used to estimate their evolutionary relationship and predict their structure or functionality. Alignment-based sequence analysis algorithms first produce the alignment of two sequences, and then, based on the number of matches and gaps, calculate their distance. These methods are very accurate, but they suffer from many disadvantages, mostly dealing with large space and time complexities. Recently, more focus has been put on alignment-free methods, which do not produce alignments but use knowledge from probability, statistics and information theory to calculate sequence similarity.
 
+![image](https://github.com/ivanfurac/Alignment-free-sequence-comparison/assets/73389887/3f17011e-c719-42d7-a1ac-871f9da4b10c)
+
 The goal of this project was to implement several alignment-free methods and use them to calculate distances between biological sequences coming from different datasets. The datasets were taken from AFproject, a free service for alignment-free method benchmarking, which was also used to check the performance of those methods (Zielezinski et al. Benchmarking of alignment-free sequence comparison methods. Genome Biology, 2019, 20, p144. doi: 10.1186/s13059-019-1755-7). The website can be accessed [here](https://afproject.org/app/).
 
 Four different alignment-free methods were implemented and compared for the purpose of this project (the code for those methods can be found in the repository):
@@ -56,6 +58,6 @@ Required Python libraries are listed in the `requirements.txt` file. You can ins
 pip install -r requirements.txt
 ```
 
-If you're interested in more details, in the directory `/paper` you can find two text files where previously mentioned alignment-free methods are explained and compared based on their performance.
+If you're interested in more details, in the directory `/paper` you can find two text files where previously mentioned alignment-free methods are explained in detail and compared based on their performance.
 
   
