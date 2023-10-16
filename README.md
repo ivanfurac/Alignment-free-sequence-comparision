@@ -21,3 +21,27 @@ Four different alignment-free methods were implemented and compared for the purp
 * **fuzzy integral similarity**: The sequences are viewed as Markov chains where nucleotides represent states. Transition probabilities are calculated, and then the Sugeno fuzzy integral is used to calculate the dissimilarity between two sequences.
 
 ## Repository and Usage
+To use the alignment-free methods and calculate distances between sequences, run the `AFCalculator.py` script. The script accepts the following arguments:
+* **--src**: Full path to directory that contains datasets of sequences. Default directory is `./data`. Every sequence dataset needs to be in its own folder inside this directory:
+  
+  ```
+  └── data
+      ├── dataset1
+      │   ├── sequence1.fasta
+      │   ├── sequence2.fasta
+      │   └── ...
+      ├── dataset2
+      │   ├── sequenceA.fasta
+      │   ├── sequenceB.fasta
+      │   └── ...
+      └── ...
+  ```
+  
+  Every fasta file can contain one or more sequences. Distances are calculated between all sequences inside one dataset, for every dataset individually.
+* **--dest**: Full path to directory where tsv files with calculated distances will be stored. Default directory is `./scores`. One file is created for every method and every dataset.
+* **--m**: Alignment-free methods (one or more) that will be used to calculate similarities. If no arguments are given, similarities will be calculated using all available methods. Repository currently contains the following methods:
+  * kmer (k-mer count)
+  * lempelziv (compression distance)
+  * relativeentropy (relative entropy)
+  * fuzzymarkov (fuzzy integral similarity).
+  
