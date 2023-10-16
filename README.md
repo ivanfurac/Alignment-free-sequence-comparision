@@ -44,4 +44,9 @@ To use the alignment-free methods and calculate distances between sequences, run
   * lempelziv (compression distance)
   * relativeentropy (relative entropy)
   * fuzzymarkov (fuzzy integral similarity).
+ 
+You can add your own methods, simply write a class that represents your alignment-free method and put it into `/methods` directory. The class needs to have a _ _call_ _ method that receives three arguments:
+* a list of sequences
+* a list of sequence names, for identifying sequences
+* csv.writer object, which writes calculated distances to a file
   
